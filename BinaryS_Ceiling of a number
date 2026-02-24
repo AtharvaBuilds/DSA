@@ -3,6 +3,9 @@ public class Main
 {
     static int ceiling(int arr[], int target){
         int first=0; int last=arr.length-1;
+        if(target>arr[arr.length-1]){
+            return -1;
+        }
         while(first<=last)
         {
             int mid=first+(last-first)/2;
@@ -16,11 +19,11 @@ public class Main
                 return mid;
             }
         }
-        return first;
+        return last;
     }
 	public static void main(String[] args) {
 	    int arr[]={1,2,4,5,9,10,11,13};
-	    int target=7;
+	    int target=13;
 	    int a=ceiling(arr,target);
 	    System.out.println(arr[a]);
 		
