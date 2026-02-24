@@ -19,7 +19,7 @@ public class Main
                 return mid;
             }
         }
-        return last;
+        return start;
     }
 	public static void main(String[] args) {
 	    int arr[]={1,2,4,5,9,10,11,13};
